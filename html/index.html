@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício de Fixação e Revisão</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+
+<body onload="exibirMensagem()">
+	<div class="container mt-4">
+
+		<h1 class="text-center mb-4">Exercícios de Fixação e Revisão</h1>
+
+		<!-- Exercício 1 - Mensagem de boas vindas -->
+		<div  class="container exercicio-2">
+			<hr class="mt-4" />
+			<h2>Exercício 1 - Mensagem de boas vindas</h2>
+			<hr class="mb-4" />
+			<p>
+				Crie uma função em exiba uma mensagem de boas-vindas personalizada ao usuário. Use prompt para pedir o nome do usuário e exiba uma mensagem com saudação.
+				A função deve ser executada sempre que a página for carregada. Utilize o atributo onload na tag body da página e assim a mesma será chamada sempre que a página for carregada.
+			</p>
+			<br>
+		</div>
+
+		<!-- Exercício 2 - Concatenação de valores -->
+		<div class="container exercicio-2">
+			<hr class="mt-4" />
+			<h2>Exercício 2 - Concatenação de valores</h2>
+			<hr class="mb-4" />
+			<p>
+				Crie uma função que, baseado nas variáveis a seguir, exiba na tela uma concatenação dos valores conforme
+				exemplo.<br />
+				<strong>Exemplo de saída:</strong><br>
+				José mora em São Paulo / SP, no bairro Centro, na rua Rua dos Pinheiros com nº 1293.
+
+			</p>
+			<form action="" class="row">
+				<div class="col-md-3">
+					<label for="nome">Nome:</label>
+					<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+				</div>
+				<div class="col-md-2">
+					<label for="rua">Rua:</label>
+					<input type="text" class="form-control" id="rua" name="rua" placeholder="Rua">
+				</div>
+				<div class="col-md-2">
+					<label for="numero">Número:</label>
+					<input type="number" class="form-control" id="numero" name="numero" placeholder="Número">
+				</div>
+				<div class="col-md-2">
+					<label for="bairro">Bairro:</label>
+					<input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
+				</div>
+				<div class="col-md-2">
+					<label for="cidade">Cidade:</label>
+					<input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+				</div>
+				<div class="col-md-1">
+					<label for="uf">UF:</label>
+					<input type="text" class="form-control" id="uf" name="uf" placeholder="UF">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button onclick="concatenação()" class="btn btn-primary">Concatenar</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">Concatenação:</div>
+				<input type="text" class="form-control" id="resultado-concatenacao" disabled readonly />
+			</div>
+			<br />
+		</div>
+
+		<!-- Exercício 3 - Soma entre dois valores -->
+		<div class="container exercicio-3 mt-4">
+			<hr class="mt-4" />
+			<h2>Exercício 3 - Soma entre dois valores</h2>
+			<hr class="mb-4" />
+			<p>
+				Ao informar os dois números nos campos a seguir e clicar em "Somar", calcule e exiba o resultado da soma entre eles.
+			</p>
+			<form action="" class="row">
+				<div class="col-md-4">
+					<label for="valor1">Valor 1:</label>
+					<input type="number" class="form-control" id="valor1" name="valor1" placeholder="Valor 1">
+				</div>
+				<div class="col-md-4">
+					<label for="valor2">Valor 2:</label>
+					<input type="number" class="form-control" id="valor2" name="valor2" placeholder="Valor 2">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button onclick="soma()" class="btn btn-primary">Somar</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">Resultado da soma:</div>
+				<input type="text" class="form-control" id="resultado-soma" disabled readonly />
+			</div>
+			<br />
+		</div>
+
+		<!-- Exercício 4 - Cálculo de Experiência -->
+		<div class="container exercicio-4 mt-4">
+			<hr class="mt-4" />
+			<h2>Exercício 4 - Cálculo de Experiência</h2>
+			<hr class="mb-4" />
+			<p>
+				Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é, seguindo as seguintes regras:
+				<ul>
+					<li>De 0-1 ano: Iniciante</li>
+					<li>De 1-3 anos: Intermediário</li>
+					<li>De 3-6 anos: Avançado</li>
+					<li>A partir dos 7 anos: Jedi Master</li>
+				</ul>
+			</p>
+			<form action="" class="row">
+				<div class="col-md-4">
+					<label for="anos-estudo">Anos de Estudo:</label>
+					<input type="number" class="form-control" id="anos-estudo" name="anos-estudo"
+						placeholder="Anos de Estudo">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button  onclick="exp()" class="btn btn-primary">Calcular Experiência</button>
+			</div>
+			<div class="input-group mt-4">
+				<div  class="input-group-text">Nível de Experiência:</div>
+				<input type="text" class="form-control" id="resultado-experiencia" disabled readonly />
+			</div>
+			<br />
+		</div>
+
+		<!-- Exercício 5 - Par ou ímpar? -->
+		<div class="container exercicio-4 mt-4">
+			<hr class="mt-4" />
+			<h2>Exercício 5 - Par ou ímpar?</h2>
+			<hr class="mb-4" />
+			<p>
+				Crie uma função para verificar e exibir se um número informado pelo usuário é par ou ímpar. Utilize o operador (%), que obtém o resto de uma divisão inteira para verificar a divisibilidade do número informado por 2.
+			</p>
+			<form action="" class="row">
+				<div class="col-md-4">
+					<label for="numero-verificar">Número para verificar:</label>
+					<input type="number" class="form-control" id="numero-verificar" name="numero-verificar"
+						placeholder="Insira um número">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button onclick="parouimpar()" class="btn btn-primary">Verificar</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">O número informado é:</div>
+				<input type="text" class="form-control" id="resultado-par-impar" disabled readonly />
+			</div>
+			<br />
+		</div>
+	</div>
+
+	<script src="../js/index.js"></script>
+</body>
+
+</html>
